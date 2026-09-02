@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "kaggle_environments_version": "1.32.7",
+    "kaggle_environments_version_ok": true,
+    "py_compile": "OK",
+    "ast_parse": "OK",
+    "standalone_import": "OK",
+    "has_agent_callable": true,
+    "dynamic_execution_games_run": 18,
+    "dynamic_execution_failures": [],
+    "dynamic_execution_ok": true,
+    "zip_members": [
+      "main.py"
+    ],
+    "zip_single_member_main_py": true,
+    "archived_equals_exported": true,
+    "main_py_sha256": "595b084bd158d1782ecac4d64fdb408cb938489bd4a3a343116d24a99be288c0",
+    "submission_zip_sha256": "5730f413bafcc05f455034a609e3f14a626bfd1240914705224600aa28a7ae39"
+  },
+  "errors": [],
+  "overall_pass": true
+}
