@@ -130,8 +130,29 @@ exceptions and zero non-DONE game statuses**.
 - 36-0 (100%) vs pass/random/starter, mean margin ≈ +$26,000
 - 0-12 (0%) vs the current 1062 submission itself, mean margin ≈ -$124,000
 
-### Final screen (10 fresh seeds, both seats)
-[FILLED IN BELOW FROM final_screen.log]
+### Final screen (10 fresh seeds, both seats; n=80 games)
+
+| | W | L | T | win rate | mean margin |
+|---|---|---|---|---|---|
+| Overall (blended) | 59 | 21 | 0 | 73.75% | -$19,609 |
+| vs `pass` | 20 | 0 | 0 | 100% | +$23,687 |
+| vs `random` | 20 | 0 | 0 | 100% | +$27,481 |
+| vs `starter` | 19 | 1 | 0 | 95% | +$19,727 |
+| vs `frozen_1062` | 0 | 20 | 0 | 0% | -$149,332 |
+
+median margin +$20,317, worst margin -$166,960, CVaR20 -$153,284, zero
+schema/runtime failures across all 80 games.
+
+**Context run** — `frozen_1062` vs the same three weak baselines
+(n=60, no SONNET001 involved): 60-0-0 (100%), mean margin **+$151,974**,
+worst margin (i.e. its *weakest* game) +$72,843. This is the number that
+grounds Section 6's argument: facing opponents that do not contest the
+market at all, `frozen_1062` scores far above its own real live average
+of +$4,420 mean margin / 51.5% win rate (Section 2) — its fixed output
+simply isn't being tested by `pass`/`random`/`starter`, so the ~$150k
+margins SONNET001 loses by are not a measurement of "how much worse
+SONNET001 is than a good live agent," they are close to a measurement of
+"how big `frozen_1062`'s own script is when literally unopposed."
 
 ## 6. Selection reasoning — the hard tradeoff, stated plainly
 
