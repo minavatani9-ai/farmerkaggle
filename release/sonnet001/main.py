@@ -64,6 +64,7 @@ SELL_KEEP_BUFFER = {"FERTILIZER": 25}  # keep a deep reserve: FERTILIZE (roughly
 # crop tile's per-tick yield) is worth far more than the ~$100 raw sell price, so fertilizer
 # should mostly be consumed by the FERTILIZE job, not sold — sell only genuine overflow.
 PICKUP_BATCH = {"WHEAT": 6, "FERTILIZER": 4}
+ANIMAL_CASH_RESERVE = 500
 
 _STATE = {0: None, 1: None}
 
@@ -96,13 +97,29 @@ def _tile_role(x, y, board_size):
     return ROLE_CYCLE[idx]
 
 
+CORE_TILE_CAP = 40
+# A live-replay loss (episode 104907637) showed an opponent running only 6
+# total animals the entire game out-earn us 2:1 by the end despite us
+# running 12-14 animals across a full 75-tile footprint. The same pattern
+# was independently visible in the old frozen-tape submission's own final
+# tile counts (~8 cow + 6 sheep + 4 wheat tiles, nothing else, yet a much
+# higher live average than this agent's solo ceiling). A crew this size
+# cannot give daily service (water/feed/harvest) to every tile in a
+# sprawling footprint — missed days show up as lost yield, not just
+# delayed cash. Capping the active footprint lets the same crew give
+# near-full daily coverage to fewer, better-tended tiles.
 def _plan_tiles(unlocked, board_size, shed_pos_set):
-    roles = {}
+    all_tiles = []
     for y in range(board_size):
         for x in range(board_size):
-            if _quadrant_of(x, y, board_size) not in unlocked:
-                continue
-            roles[(x, y)] = "WHEAT" if (x, y) in shed_pos_set else _tile_role(x, y, board_size)
+            if _quadrant_of(x, y, board_size) in unlocked:
+                all_tiles.append((x, y))
+    if len(all_tiles) > CORE_TILE_CAP:
+        all_tiles.sort(key=lambda t: min(_dist(t, s) for s in shed_pos_set))
+        all_tiles = all_tiles[:CORE_TILE_CAP]
+    roles = {}
+    for (x, y) in all_tiles:
+        roles[(x, y)] = "WHEAT" if (x, y) in shed_pos_set else _tile_role(x, y, board_size)
     return roles
 
 
@@ -463,8 +480,14 @@ def _agent_impl(obs):
     market_orders = []
 
     # ---- Centralized market decisions -------------------------------
+    # Live-replay evidence (see CORE_TILE_CAP note) showed money staying
+    # near zero through day ~19 in nearly every game — real opponents had
+    # $1k-26k by then. Buying land the capped footprint doesn't need is
+    # capital locked up for zero return; only buy the next quadrant while
+    # it's still needed to reach CORE_TILE_CAP.
     n_extra = len(unlocked) - 1
-    if n_extra < len(LAND_ORDER):
+    tiles_per_quadrant = (board_size // 2) ** 2
+    if n_extra < len(LAND_ORDER) and len(unlocked) * tiles_per_quadrant < CORE_TILE_CAP:
         next_land = LAND_ORDER[n_extra]
         cost = LAND_PRICES[next_land]
         if day <= LAND_BUY_DAY_CUTOFF[next_land] and money >= cost + 400:
@@ -479,6 +502,7 @@ def _agent_impl(obs):
         target_hands = _desired_hands(n_workable, money)
         already = int(farm.get("hires_today", 0) or 0)
         need = max(0, target_hands - already)
+        committed_cost = 0
         cum_cost = 0
         for n in range(already, already + need):
             if n >= len(FIB):
@@ -487,6 +511,8 @@ def _agent_impl(obs):
             if cum_cost > money:
                 break
             market_orders.append(["HIRE"])
+            committed_cost = cum_cost
+        money -= committed_cost
 
     crop_need = {c: 0 for c in CROPS}
     animal_need = {a: 0 for a in ANIMALS}
@@ -516,16 +542,25 @@ def _agent_impl(obs):
             market_orders.append(["BUY_SEED", crop, qty])
             money -= qty * cost_each
 
+    # Live-replay evidence: our money sat near zero through day ~19 in
+    # nearly every game while several real opponents already had
+    # $1k-26k banked by then (episodes 104900754, 104903340, 104905146,
+    # 104907637). Animals take 6-8 days to first yield; continuously
+    # reinvesting every spare dollar into more of them (the old want<=4,
+    # reserve=200 policy) meant cash never got the chance to accumulate.
+    # A real cash reserve and a smaller per-turn batch force the surplus
+    # to actually bank before more capital gets locked into non-liquid
+    # assets.
     n_units_today = 1 + len(farm.get("hands") or [])
     for animal, need in animal_need.items():
         have = shed.get(animal, 0) + sum(
             _unit_inventory(private, i).get(animal, 0) for i in range(n_units_today)
         )
-        want = min(max(0, need - have), 4)
+        want = min(max(0, need - have), 2)
         if want <= 0:
             continue
         cost_each = ANIMALS[animal]["cost"]
-        qty = min(want, max(0, int((money - 200) // cost_each)))
+        qty = min(want, max(0, int((money - ANIMAL_CASH_RESERVE) // cost_each)))
         if qty > 0 and len(market_orders) < 9:
             market_orders.append(["BUY_ANIMAL", animal, qty])
             money -= qty * cost_each

@@ -1,5 +1,13 @@
 # SONNET001 — Kaggriculture Live Challenger
 
+**Update (v2, post-deployment):** the v1 release below was submitted live
+and scored 392.6 — worse than the 1062 it replaced — confirming the
+single risk flagged in Section 7. Ten real live replays (episodes
+104900754–104908524, plus 104904207/104907637 individually) were obtained
+and forensically analyzed; three concrete, evidence-backed fixes were made
+and validated. **See Section 8 for the live forensics and the fix.**
+Sections 0–7 are preserved unedited as the original v1 rationale.
+
 ## 0. Repository audit (critical finding)
 
 The connected repository `minavatani9-ai/farmerkaggle` was **completely empty**
@@ -202,3 +210,113 @@ single biggest open risk of this release (see Risks).
   "strongest existing live-oriented parent" comparisons could not be
   performed with real code; only the frozen 1062 tape and the built-in
   `pass`/`random`/`starter` agents were available as reference points.
+
+## 8. v2 — live forensics on the actual deployment, and the fix
+
+v1 scored 392.6 live. The user supplied real replay JSONs for the games
+actually played: episode 104904207 individually, episode 104907637
+individually, then a batch of 10 (104900754–104908524, which includes
+104904207 and 104907637). That batch is the full record available.
+
+### 8.1 Real live record
+
+**3W–7L (30% win rate), mean margin −$14,857**, zero schema/runtime
+failures — every game ran all 720 steps and produced a valid reward, so
+this is a strategy problem, not a crash. This is a real regression
+against the old submission's 51.5%/+$4,420 record, confirming the Section
+7 risk materialized rather than being pure small-sample noise (10 games
+is still a small sample, but the mechanism below is visible and
+consistent across essentially every game, win or loss).
+
+| Episode | Opponent | Result | Margin |
+|---|---|---|---|
+| 104900754 | Anthony LOISEAU | LOSS | −$52,527 |
+| 104901629 | Gugu888 | LOSS | −$15,561 |
+| 104902494 | Picu | WIN | +$2,008 |
+| 104903340 | Daniel Rodriguez Bothe | LOSS | −$2,603 |
+| 104904207 | Dip Biswas | WIN | +$24,631 |
+| 104905146 | Simon | LOSS | −$56,908 |
+| 104905894 | woorym | LOSS | −$32,998 |
+| 104906630 | Arnav | WIN | +$19,223 |
+| 104907637 | Edilaine Arceno | LOSS | −$29,705 |
+| 104908524 | Dickie | LOSS | −$4,127 |
+
+### 8.2 Mechanism: the ramp was far too slow
+
+Money sampled at fixed days across all 10 games:
+
+| Day | Our money (typical range across games) | Opponent money in games we lost (typical) |
+|---|---|---|
+| 5 | $6–$324 | $30–$1,660 |
+| 14 | $234–$534 | $1,000–$16,571 |
+| 19 | $2–$345 | $2,870–$26,267 |
+| 24 | $247–$16,195 | $9,108–$45,319 |
+
+Through roughly the first two-thirds of the season we were sitting at
+low-hundreds of dollars in nearly every game — wins and losses alike —
+while opponents in the games we lost already had four or five figures
+banked by day 14–19. We only broke out in the final third. Root cause,
+confirmed by reading the code against this pattern: every spare dollar
+was continuously reinvested into more animals (6–8 day payback) and a
+second land quadrant, with only a $200 cash floor — capital never got the
+chance to compound because it was perpetually locked into non-liquid,
+slow-maturing assets.
+
+A secondary, convergent, independent signal: the two heaviest wins
+against us (Anthony LOISEAU $75,327, Simon $76,122) both ran an
+almost pure-COW economy (9 and 12 cows respectively, essentially zero
+crop tiles) on a small, tightly-serviced footprint — not a diversified
+75-tile operation. This echoes what Section 1 already found in the old
+frozen-tape submission's own final state (~8 cow + 6 sheep + 4 wheat
+tiles, nothing else): a small footprint serviced perfectly seems to beat
+a large one serviced adequately, in this game's economics.
+
+### 8.3 Fixes applied (in `main.py`, validated against fixed-seed solo
+evaluation, `research/tools/eval.py`)
+
+1. **`CORE_TILE_CAP` (=40):** role assignment is now capped to the N
+   tiles nearest the shed, instead of every unlocked tile getting a role.
+   A smaller crew now gives near-full daily service to fewer tiles
+   instead of diluted service across many. Solo mean rose from ~$27.9k
+   (uncapped) to ~$42.2k across two independent 15-seed batches — the
+   single largest lever found in this session.
+2. **Land purchase tied to the tile cap:** the next quadrant is bought
+   only while currently-unlocked tiles are still short of `CORE_TILE_CAP`
+   — buying land the capped footprint will never use was locking up
+   capital for zero return.
+3. **`ANIMAL_CASH_RESERVE` (=500) and a smaller per-turn batch (4→2):**
+   animal purchases now require a real cash buffer above the reserve,
+   so surplus cash gets the chance to actually bank instead of being
+   continuously reinvested into more 6-8-day-payback assets.
+4. **Hire-cost accounting bug:** the hour-0 hiring block queued `HIRE`
+   orders without deducting their cost from the turn's running `money`
+   total before the seed/animal purchase blocks ran afterward — meaning
+   those blocks could commit to spending already-committed cash (the
+   game engine silently drops orders it can't afford, so this wasn't a
+   crash, just wasted market-order slots on turns that most needed
+   them). Fixed to deduct actual committed hire cost before further
+   spending decisions.
+
+A COW-concentrated portfolio (mirroring what the two strongest live
+opponents run) was tested directly — both a full pivot (40% COW) and a
+mild nudge (25% COW) — and **measured worse in solo evaluation each
+time** (34.0k and 31.9k vs. 42.2k for the unchanged diversified
+portfolio), most likely because concentrating our own sells into one
+market crashes our own realized milk price faster than a passive
+opponent would ever contest it. This is suggestive-but-thin live evidence
+(n=2) against a controlled, repeated, contrary measurement, so the
+portfolio mix was left unchanged rather than acting on the weaker
+signal — documented here so the tradeoff isn't silently dropped.
+
+### 8.4 Result after the fix
+
+Fixed-seed solo evaluation (15 seeds, `pass` opponent): mean $42,207
+(range $23k–$48k), up from $27,149 pre-fix — a ~55% increase, with
+visibly tighter variance. A 5-game robustness sweep (both seats, vs
+pass/random/starter) after the fix: 30-0, zero exceptions, zero
+non-DONE statuses. This is **not** re-verified against `frozen_1062` in
+a way that changes Section 6/7's conclusion — it remains unbeaten
+there — but the mechanism this fix targets (slow capital ramp) was
+directly visible in the real live losses, which the frozen-tape matchup
+never surfaced. This is the release's live-evidence-driven revision, and
+the version now shipped in `submission.zip`.

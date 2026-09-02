@@ -1,0 +1,782 @@
+[
+ {
+  "episode_id": 104900754,
+  "opponent": "Anthony LOISEAU",
+  "seed": 1467772799,
+  "seat": 0,
+  "our_reward": 22800.0,
+  "opp_reward": 75327.0,
+  "margin": -52527.0,
+  "outcome": "LOSS",
+  "final_tiles_us": {
+   "animals": {
+    "COW": 6,
+    "SHEEP": 4,
+    "GOOSE": 2
+   },
+   "crops": {
+    "WHEAT": 5,
+    "CARROT": 3,
+    "TOMATO": 0,
+    "STRAWBERRY": 7,
+    "MELON": 6
+   },
+   "weed": 0,
+   "empty": 37,
+   "locked": 25
+  },
+  "final_tiles_opp": {
+   "animals": {
+    "COW": 9,
+    "SHEEP": 1,
+    "GOOSE": 0
+   },
+   "crops": {
+    "WHEAT": 0,
+    "CARROT": 0,
+    "TOMATO": 0,
+    "STRAWBERRY": 0,
+    "MELON": 1
+   },
+   "weed": 0,
+   "empty": 14,
+   "locked": 75
+  },
+  "final_unlocked_us": 3,
+  "final_unlocked_opp": 1,
+  "snaps": {
+   "5": {
+    "our_money": 6.0,
+    "opp_money": 749.0,
+    "our_animals": 1,
+    "opp_animals": 3
+   },
+   "9": {
+    "our_money": 101.0,
+    "opp_money": 381.0,
+    "our_animals": 2,
+    "opp_animals": 7
+   },
+   "14": {
+    "our_money": 234.0,
+    "opp_money": 4084.0,
+    "our_animals": 4,
+    "opp_animals": 7
+   },
+   "19": {
+    "our_money": 122.0,
+    "opp_money": 26267.0,
+    "our_animals": 9,
+    "opp_animals": 8
+   },
+   "24": {
+    "our_money": 7225.0,
+    "opp_money": 42125.0,
+    "our_animals": 11,
+    "opp_animals": 8
+   }
+  }
+ },
+ {
+  "episode_id": 104901629,
+  "opponent": "Gugu888",
+  "seed": 995626309,
+  "seat": 0,
+  "our_reward": 15341.0,
+  "opp_reward": 30902.0,
+  "margin": -15561.0,
+  "outcome": "LOSS",
+  "final_tiles_us": {
+   "animals": {
+    "COW": 8,
+    "SHEEP": 5,
+    "GOOSE": 2
+   },
+   "crops": {
+    "WHEAT": 8,
+    "CARROT": 1,
+    "TOMATO": 0,
+    "STRAWBERRY": 6,
+    "MELON": 7
+   },
+   "weed": 0,
+   "empty": 34,
+   "locked": 25
+  },
+  "final_tiles_opp": {
+   "animals": {
+    "COW": 3,
+    "SHEEP": 0,
+    "GOOSE": 11
+   },
+   "crops": {
+    "WHEAT": 12,
+    "CARROT": 0,
+    "TOMATO": 0,
+    "STRAWBERRY": 0,
+    "MELON": 0
+   },
+   "weed": 7,
+   "empty": 64,
+   "locked": 0
+  },
+  "final_unlocked_us": 3,
+  "final_unlocked_opp": 4,
+  "snaps": {
+   "5": {
+    "our_money": 131.0,
+    "opp_money": 117.0,
+    "our_animals": 1,
+    "opp_animals": 4
+   },
+   "9": {
+    "our_money": 376.0,
+    "opp_money": 81.0,
+    "our_animals": 2,
+    "opp_animals": 4
+   },
+   "14": {
+    "our_money": 375.0,
+    "opp_money": 4209.0,
+    "our_animals": 10,
+    "opp_animals": 16
+   },
+   "19": {
+    "our_money": 333.0,
+    "opp_money": 6673.0,
+    "our_animals": 8,
+    "opp_animals": 12
+   },
+   "24": {
+    "our_money": 4665.0,
+    "opp_money": 20860.0,
+    "our_animals": 12,
+    "opp_animals": 15
+   }
+  }
+ },
+ {
+  "episode_id": 104902494,
+  "opponent": "Picu",
+  "seed": 258014892,
+  "seat": 0,
+  "our_reward": 19226.0,
+  "opp_reward": 17218.0,
+  "margin": 2008.0,
+  "outcome": "WIN",
+  "final_tiles_us": {
+   "animals": {
+    "COW": 6,
+    "SHEEP": 4,
+    "GOOSE": 2
+   },
+   "crops": {
+    "WHEAT": 4,
+    "CARROT": 0,
+    "TOMATO": 0,
+    "STRAWBERRY": 5,
+    "MELON": 8
+   },
+   "weed": 0,
+   "empty": 39,
+   "locked": 25
+  },
+  "final_tiles_opp": {
+   "animals": {
+    "COW": 0,
+    "SHEEP": 0,
+    "GOOSE": 0
+   },
+   "crops": {
+    "WHEAT": 1,
+    "CARROT": 6,
+    "TOMATO": 6,
+    "STRAWBERRY": 11,
+    "MELON": 0
+   },
+   "weed": 14,
+   "empty": 12,
+   "locked": 50
+  },
+  "final_unlocked_us": 3,
+  "final_unlocked_opp": 2,
+  "snaps": {
+   "5": {
+    "our_money": 114.0,
+    "opp_money": 182.0,
+    "our_animals": 1,
+    "opp_animals": 0
+   },
+   "9": {
+    "our_money": 330.0,
+    "opp_money": 180.0,
+    "our_animals": 2,
+    "opp_animals": 0
+   },
+   "14": {
+    "our_money": 346.0,
+    "opp_money": 5067.0,
+    "our_animals": 11,
+    "opp_animals": 0
+   },
+   "19": {
+    "our_money": 42.0,
+    "opp_money": 6224.0,
+    "our_animals": 7,
+    "opp_animals": 0
+   },
+   "24": {
+    "our_money": 2931.0,
+    "opp_money": 10312.0,
+    "our_animals": 9,
+    "opp_animals": 0
+   }
+  }
+ },
+ {
+  "episode_id": 104903340,
+  "opponent": "Daniel Rodriguez Bothe",
+  "seed": 1186482274,
+  "seat": 1,
+  "our_reward": 25224.0,
+  "opp_reward": 27827.0,
+  "margin": -2603.0,
+  "outcome": "LOSS",
+  "final_tiles_us": {
+   "animals": {
+    "COW": 5,
+    "SHEEP": 4,
+    "GOOSE": 2
+   },
+   "crops": {
+    "WHEAT": 12,
+    "CARROT": 0,
+    "TOMATO": 0,
+    "STRAWBERRY": 5,
+    "MELON": 7
+   },
+   "weed": 0,
+   "empty": 33,
+   "locked": 25
+  },
+  "final_tiles_opp": {
+   "animals": {
+    "COW": 0,
+    "SHEEP": 0,
+    "GOOSE": 0
+   },
+   "crops": {
+    "WHEAT": 0,
+    "CARROT": 0,
+    "TOMATO": 0,
+    "STRAWBERRY": 0,
+    "MELON": 0
+   },
+   "weed": 1,
+   "empty": 49,
+   "locked": 50
+  },
+  "final_unlocked_us": 3,
+  "final_unlocked_opp": 2,
+  "snaps": {
+   "5": {
+    "our_money": 103.0,
+    "opp_money": 1661.0,
+    "our_animals": 1,
+    "opp_animals": 0
+   },
+   "9": {
+    "our_money": 198.0,
+    "opp_money": 1049.0,
+    "our_animals": 2,
+    "opp_animals": 0
+   },
+   "14": {
+    "our_money": 392.0,
+    "opp_money": 16571.0,
+    "our_animals": 9,
+    "opp_animals": 0
+   },
+   "19": {
+    "our_money": 272.0,
+    "opp_money": 22634.0,
+    "our_animals": 9,
+    "opp_animals": 0
+   },
+   "24": {
+    "our_money": 8572.0,
+    "opp_money": 24025.0,
+    "our_animals": 11,
+    "opp_animals": 0
+   }
+  }
+ },
+ {
+  "episode_id": 104904207,
+  "opponent": "Dip Biswas",
+  "seed": 996842947,
+  "seat": 1,
+  "our_reward": 35634.0,
+  "opp_reward": 11003.0,
+  "margin": 24631.0,
+  "outcome": "WIN",
+  "final_tiles_us": {
+   "animals": {
+    "COW": 5,
+    "SHEEP": 4,
+    "GOOSE": 2
+   },
+   "crops": {
+    "WHEAT": 8,
+    "CARROT": 0,
+    "TOMATO": 0,
+    "STRAWBERRY": 6,
+    "MELON": 7
+   },
+   "weed": 0,
+   "empty": 36,
+   "locked": 25
+  },
+  "final_tiles_opp": {
+   "animals": {
+    "COW": 0,
+    "SHEEP": 0,
+    "GOOSE": 0
+   },
+   "crops": {
+    "WHEAT": 2,
+    "CARROT": 0,
+    "TOMATO": 0,
+    "STRAWBERRY": 0,
+    "MELON": 0
+   },
+   "weed": 7,
+   "empty": 51,
+   "locked": 25
+  },
+  "final_unlocked_us": 3,
+  "final_unlocked_opp": 3,
+  "snaps": {
+   "5": {
+    "our_money": 118.0,
+    "opp_money": 30.0,
+    "our_animals": 1,
+    "opp_animals": 0
+   },
+   "9": {
+    "our_money": 362.0,
+    "opp_money": 30.0,
+    "our_animals": 2,
+    "opp_animals": 0
+   },
+   "14": {
+    "our_money": 290.0,
+    "opp_money": 4.0,
+    "our_animals": 9,
+    "opp_animals": 7
+   },
+   "19": {
+    "our_money": 232.0,
+    "opp_money": 3.0,
+    "our_animals": 12,
+    "opp_animals": 0
+   },
+   "24": {
+    "our_money": 15242.0,
+    "opp_money": 5225.0,
+    "our_animals": 12,
+    "opp_animals": 0
+   }
+  }
+ },
+ {
+  "episode_id": 104905146,
+  "opponent": "Simon",
+  "seed": 395024644,
+  "seat": 0,
+  "our_reward": 19214.0,
+  "opp_reward": 76122.0,
+  "margin": -56908.0,
+  "outcome": "LOSS",
+  "final_tiles_us": {
+   "animals": {
+    "COW": 5,
+    "SHEEP": 4,
+    "GOOSE": 2
+   },
+   "crops": {
+    "WHEAT": 7,
+    "CARROT": 2,
+    "TOMATO": 0,
+    "STRAWBERRY": 6,
+    "MELON": 4
+   },
+   "weed": 0,
+   "empty": 36,
+   "locked": 25
+  },
+  "final_tiles_opp": {
+   "animals": {
+    "COW": 12,
+    "SHEEP": 2,
+    "GOOSE": 0
+   },
+   "crops": {
+    "WHEAT": 0,
+    "CARROT": 0,
+    "TOMATO": 0,
+    "STRAWBERRY": 2,
+    "MELON": 0
+   },
+   "weed": 1,
+   "empty": 58,
+   "locked": 25
+  },
+  "final_unlocked_us": 3,
+  "final_unlocked_opp": 3,
+  "snaps": {
+   "5": {
+    "our_money": 124.0,
+    "opp_money": 73.0,
+    "our_animals": 1,
+    "opp_animals": 2
+   },
+   "9": {
+    "our_money": 316.0,
+    "opp_money": 69.0,
+    "our_animals": 2,
+    "opp_animals": 3
+   },
+   "14": {
+    "our_money": 534.0,
+    "opp_money": 3299.0,
+    "our_animals": 11,
+    "opp_animals": 12
+   },
+   "19": {
+    "our_money": 61.0,
+    "opp_money": 17857.0,
+    "our_animals": 10,
+    "opp_animals": 14
+   },
+   "24": {
+    "our_money": 8524.0,
+    "opp_money": 45319.0,
+    "our_animals": 13,
+    "opp_animals": 14
+   }
+  }
+ },
+ {
+  "episode_id": 104905894,
+  "opponent": "woorym",
+  "seed": 378186432,
+  "seat": 0,
+  "our_reward": 22290.0,
+  "opp_reward": 55288.0,
+  "margin": -32998.0,
+  "outcome": "LOSS",
+  "final_tiles_us": {
+   "animals": {
+    "COW": 5,
+    "SHEEP": 5,
+    "GOOSE": 2
+   },
+   "crops": {
+    "WHEAT": 7,
+    "CARROT": 4,
+    "TOMATO": 0,
+    "STRAWBERRY": 5,
+    "MELON": 6
+   },
+   "weed": 0,
+   "empty": 36,
+   "locked": 25
+  },
+  "final_tiles_opp": {
+   "animals": {
+    "COW": 5,
+    "SHEEP": 1,
+    "GOOSE": 4
+   },
+   "crops": {
+    "WHEAT": 2,
+    "CARROT": 0,
+    "TOMATO": 3,
+    "STRAWBERRY": 5,
+    "MELON": 0
+   },
+   "weed": 0,
+   "empty": 3,
+   "locked": 75
+  },
+  "final_unlocked_us": 3,
+  "final_unlocked_opp": 1,
+  "snaps": {
+   "5": {
+    "our_money": 112.0,
+    "opp_money": 30.0,
+    "our_animals": 1,
+    "opp_animals": 5
+   },
+   "9": {
+    "our_money": 286.0,
+    "opp_money": 8.0,
+    "our_animals": 2,
+    "opp_animals": 5
+   },
+   "14": {
+    "our_money": 192.0,
+    "opp_money": 6272.0,
+    "our_animals": 9,
+    "opp_animals": 12
+   },
+   "19": {
+    "our_money": 5.0,
+    "opp_money": 12177.0,
+    "our_animals": 10,
+    "opp_animals": 10
+   },
+   "24": {
+    "our_money": 5861.0,
+    "opp_money": 34383.0,
+    "our_animals": 12,
+    "opp_animals": 9
+   }
+  }
+ },
+ {
+  "episode_id": 104906630,
+  "opponent": "Arnav",
+  "seed": 532234859,
+  "seat": 0,
+  "our_reward": 28303.0,
+  "opp_reward": 9080.0,
+  "margin": 19223.0,
+  "outcome": "WIN",
+  "final_tiles_us": {
+   "animals": {
+    "COW": 6,
+    "SHEEP": 4,
+    "GOOSE": 1
+   },
+   "crops": {
+    "WHEAT": 6,
+    "CARROT": 0,
+    "TOMATO": 0,
+    "STRAWBERRY": 6,
+    "MELON": 9
+   },
+   "weed": 0,
+   "empty": 37,
+   "locked": 25
+  },
+  "final_tiles_opp": {
+   "animals": {
+    "COW": 0,
+    "SHEEP": 0,
+    "GOOSE": 17
+   },
+   "crops": {
+    "WHEAT": 0,
+    "CARROT": 0,
+    "TOMATO": 0,
+    "STRAWBERRY": 0,
+    "MELON": 0
+   },
+   "weed": 7,
+   "empty": 27,
+   "locked": 25
+  },
+  "final_unlocked_us": 3,
+  "final_unlocked_opp": 3,
+  "snaps": {
+   "5": {
+    "our_money": 115.0,
+    "opp_money": 615.0,
+    "our_animals": 1,
+    "opp_animals": 2
+   },
+   "9": {
+    "our_money": 39.0,
+    "opp_money": 644.0,
+    "our_animals": 2,
+    "opp_animals": 5
+   },
+   "14": {
+    "our_money": 357.0,
+    "opp_money": 1033.0,
+    "our_animals": 8,
+    "opp_animals": 5
+   },
+   "19": {
+    "our_money": 345.0,
+    "opp_money": 755.0,
+    "our_animals": 11,
+    "opp_animals": 5
+   },
+   "24": {
+    "our_money": 16195.0,
+    "opp_money": 542.0,
+    "our_animals": 10,
+    "opp_animals": 9
+   }
+  }
+ },
+ {
+  "episode_id": 104907637,
+  "opponent": "Edilaine Arceno",
+  "seed": 1702725680,
+  "seat": 1,
+  "our_reward": 26412.0,
+  "opp_reward": 56117.0,
+  "margin": -29705.0,
+  "outcome": "LOSS",
+  "final_tiles_us": {
+   "animals": {
+    "COW": 5,
+    "SHEEP": 5,
+    "GOOSE": 2
+   },
+   "crops": {
+    "WHEAT": 8,
+    "CARROT": 4,
+    "TOMATO": 0,
+    "STRAWBERRY": 5,
+    "MELON": 4
+   },
+   "weed": 0,
+   "empty": 37,
+   "locked": 25
+  },
+  "final_tiles_opp": {
+   "animals": {
+    "COW": 6,
+    "SHEEP": 0,
+    "GOOSE": 0
+   },
+   "crops": {
+    "WHEAT": 1,
+    "CARROT": 0,
+    "TOMATO": 0,
+    "STRAWBERRY": 15,
+    "MELON": 6
+   },
+   "weed": 0,
+   "empty": 44,
+   "locked": 25
+  },
+  "final_unlocked_us": 3,
+  "final_unlocked_opp": 3,
+  "snaps": {
+   "5": {
+    "our_money": 324.0,
+    "opp_money": 1066.0,
+    "our_animals": 1,
+    "opp_animals": 6
+   },
+   "9": {
+    "our_money": 243.0,
+    "opp_money": 1094.0,
+    "our_animals": 2,
+    "opp_animals": 6
+   },
+   "14": {
+    "our_money": 390.0,
+    "opp_money": 5669.0,
+    "our_animals": 11,
+    "opp_animals": 4
+   },
+   "19": {
+    "our_money": 203.0,
+    "opp_money": 9847.0,
+    "our_animals": 9,
+    "opp_animals": 6
+   },
+   "24": {
+    "our_money": 10723.0,
+    "opp_money": 32107.0,
+    "our_animals": 13,
+    "opp_animals": 6
+   }
+  }
+ },
+ {
+  "episode_id": 104908524,
+  "opponent": "Dickie",
+  "seed": 1772520677,
+  "seat": 0,
+  "our_reward": 13214.0,
+  "opp_reward": 17341.0,
+  "margin": -4127.0,
+  "outcome": "LOSS",
+  "final_tiles_us": {
+   "animals": {
+    "COW": 7,
+    "SHEEP": 3,
+    "GOOSE": 2
+   },
+   "crops": {
+    "WHEAT": 4,
+    "CARROT": 0,
+    "TOMATO": 0,
+    "STRAWBERRY": 5,
+    "MELON": 4
+   },
+   "weed": 0,
+   "empty": 45,
+   "locked": 25
+  },
+  "final_tiles_opp": {
+   "animals": {
+    "COW": 7,
+    "SHEEP": 0,
+    "GOOSE": 0
+   },
+   "crops": {
+    "WHEAT": 0,
+    "CARROT": 0,
+    "TOMATO": 0,
+    "STRAWBERRY": 0,
+    "MELON": 16
+   },
+   "weed": 8,
+   "empty": 15,
+   "locked": 50
+  },
+  "final_unlocked_us": 3,
+  "final_unlocked_opp": 2,
+  "snaps": {
+   "5": {
+    "our_money": 130.0,
+    "opp_money": 170.0,
+    "our_animals": 1,
+    "opp_animals": 2
+   },
+   "9": {
+    "our_money": 212.0,
+    "opp_money": 589.0,
+    "our_animals": 2,
+    "opp_animals": 1
+   },
+   "14": {
+    "our_money": 399.0,
+    "opp_money": 4000.0,
+    "our_animals": 2,
+    "opp_animals": 5
+   },
+   "19": {
+    "our_money": 2.0,
+    "opp_money": 2870.0,
+    "our_animals": 6,
+    "opp_animals": 9
+   },
+   "24": {
+    "our_money": 247.0,
+    "opp_money": 9108.0,
+    "our_animals": 11,
+    "opp_animals": 7
+   }
+  }
+ }
+]
