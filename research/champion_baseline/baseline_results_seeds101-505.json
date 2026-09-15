@@ -1,0 +1,190 @@
+{
+  "self_play": [
+    {
+      "seed": 101,
+      "p0_money": 112164.0,
+      "p1_money": 112164.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 202,
+      "p0_money": 144135.0,
+      "p1_money": 144135.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 303,
+      "p0_money": 73978.0,
+      "p1_money": 74912.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 404,
+      "p0_money": 92069.0,
+      "p1_money": 92069.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 505,
+      "p0_money": 51849.0,
+      "p1_money": 51849.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ],
+  "vs_pass": [
+    {
+      "seed": 101,
+      "champion_money": 170719.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 202,
+      "champion_money": 157134.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 303,
+      "champion_money": 192777.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 404,
+      "champion_money": 188531.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 505,
+      "champion_money": 186645.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ],
+  "vs_random": [
+    {
+      "seed": 101,
+      "champion_money": 180160.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 202,
+      "champion_money": 177511.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 303,
+      "champion_money": 188124.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 404,
+      "champion_money": 151139.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 505,
+      "champion_money": 113721.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ],
+  "vs_starter": [
+    {
+      "seed": 101,
+      "champion_money": 179218.0,
+      "opp_money": 3648.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 202,
+      "champion_money": 191401.0,
+      "opp_money": 3490.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 303,
+      "champion_money": 168637.0,
+      "opp_money": 3619.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 404,
+      "champion_money": 192271.0,
+      "opp_money": 3431.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 505,
+      "champion_money": 197507.0,
+      "opp_money": 3551.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ]
+}
