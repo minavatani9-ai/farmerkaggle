@@ -1,0 +1,664 @@
+{
+  "head_to_head": [
+    {
+      "seed": 101,
+      "variant_seat": 0,
+      "variant_money": 112130.0,
+      "baseline_money": 112429.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 101,
+      "variant_seat": 1,
+      "variant_money": 112130.0,
+      "baseline_money": 112429.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 202,
+      "variant_seat": 0,
+      "variant_money": 143714.0,
+      "baseline_money": 144106.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 202,
+      "variant_seat": 1,
+      "variant_money": 143714.0,
+      "baseline_money": 144106.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 303,
+      "variant_seat": 0,
+      "variant_money": 73715.0,
+      "baseline_money": 76022.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 303,
+      "variant_seat": 1,
+      "variant_money": 74694.0,
+      "baseline_money": 75053.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 404,
+      "variant_seat": 0,
+      "variant_money": 91745.0,
+      "baseline_money": 92415.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 404,
+      "variant_seat": 1,
+      "variant_money": 91745.0,
+      "baseline_money": 92415.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 505,
+      "variant_seat": 0,
+      "variant_money": 51580.0,
+      "baseline_money": 51758.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 505,
+      "variant_seat": 1,
+      "variant_money": 51580.0,
+      "baseline_money": 51758.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 606,
+      "variant_seat": 0,
+      "variant_money": 72197.0,
+      "baseline_money": 72353.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 606,
+      "variant_seat": 1,
+      "variant_money": 72197.0,
+      "baseline_money": 72353.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 707,
+      "variant_seat": 0,
+      "variant_money": 156397.0,
+      "baseline_money": 156848.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 707,
+      "variant_seat": 1,
+      "variant_money": 156397.0,
+      "baseline_money": 156848.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 808,
+      "variant_seat": 0,
+      "variant_money": 55346.0,
+      "baseline_money": 56288.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 808,
+      "variant_seat": 1,
+      "variant_money": 55346.0,
+      "baseline_money": 56288.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 909,
+      "variant_seat": 0,
+      "variant_money": 68636.0,
+      "baseline_money": 69793.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 909,
+      "variant_seat": 1,
+      "variant_money": 68636.0,
+      "baseline_money": 69793.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 1010,
+      "variant_seat": 0,
+      "variant_money": 72421.0,
+      "baseline_money": 73081.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 1010,
+      "variant_seat": 1,
+      "variant_money": 72421.0,
+      "baseline_money": 73081.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ],
+  "variant_selfplay": [
+    {
+      "seed": 101,
+      "p0": 112398.0,
+      "p1": 112398.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 202,
+      "p0": 143961.0,
+      "p1": 143961.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 303,
+      "p0": 74622.0,
+      "p1": 75559.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 404,
+      "p0": 92289.0,
+      "p1": 92289.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 505,
+      "p0": 51778.0,
+      "p1": 51778.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 606,
+      "p0": 72371.0,
+      "p1": 72371.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 707,
+      "p0": 156561.0,
+      "p1": 156561.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 808,
+      "p0": 56036.0,
+      "p1": 56036.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 909,
+      "p0": 69412.0,
+      "p1": 69412.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 1010,
+      "p0": 73025.0,
+      "p1": 73025.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ],
+  "baseline_selfplay": [
+    {
+      "seed": 101,
+      "p0": 112164.0,
+      "p1": 112164.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 202,
+      "p0": 144135.0,
+      "p1": 144135.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 303,
+      "p0": 73978.0,
+      "p1": 74912.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 404,
+      "p0": 92069.0,
+      "p1": 92069.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 505,
+      "p0": 51849.0,
+      "p1": 51849.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 606,
+      "p0": 72194.0,
+      "p1": 72194.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 707,
+      "p0": 156575.0,
+      "p1": 156575.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 808,
+      "p0": 55818.0,
+      "p1": 55818.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 909,
+      "p0": 69171.0,
+      "p1": 69171.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 1010,
+      "p0": 72885.0,
+      "p1": 72885.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ],
+  "variant_vs_pass": [
+    {
+      "seed": 101,
+      "variant_money": 170528.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 202,
+      "variant_money": 156987.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 303,
+      "variant_money": 192248.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 404,
+      "variant_money": 187974.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 505,
+      "variant_money": 186081.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 606,
+      "variant_money": 181234.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 707,
+      "variant_money": 152796.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 808,
+      "variant_money": 188314.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 909,
+      "variant_money": 109928.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 1010,
+      "variant_money": 189404.0,
+      "opp_money": 3000.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ],
+  "variant_vs_random": [
+    {
+      "seed": 101,
+      "variant_money": 172320.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 202,
+      "variant_money": 188620.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 303,
+      "variant_money": 199268.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 404,
+      "variant_money": 139642.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 505,
+      "variant_money": 151877.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 606,
+      "variant_money": 164764.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 707,
+      "variant_money": 75261.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 808,
+      "variant_money": 97626.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 909,
+      "variant_money": 165014.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 1010,
+      "variant_money": 166727.0,
+      "opp_money": 0.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ],
+  "variant_vs_starter": [
+    {
+      "seed": 101,
+      "variant_money": 178556.0,
+      "opp_money": 3648.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 202,
+      "variant_money": 190725.0,
+      "opp_money": 3490.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 303,
+      "variant_money": 168483.0,
+      "opp_money": 3619.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 404,
+      "variant_money": 191712.0,
+      "opp_money": 3431.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 505,
+      "variant_money": 196957.0,
+      "opp_money": 3551.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 606,
+      "variant_money": 176600.0,
+      "opp_money": 3464.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 707,
+      "variant_money": 115286.0,
+      "opp_money": 3550.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 808,
+      "variant_money": 188275.0,
+      "opp_money": 3421.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 909,
+      "variant_money": 150519.0,
+      "opp_money": 3421.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "seed": 1010,
+      "variant_money": 191990.0,
+      "opp_money": 3551.0,
+      "statuses": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ]
+}
